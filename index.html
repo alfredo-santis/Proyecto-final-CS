@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos de Alumnos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="log.png" alt="Logo de la Universidad" class="logo">
+        <h1>Universidad de México</h1>
+    </header>
+    <main>
+        <h2>Base de Datos de Alumnos</h2>
+        <section id="inicio">
+            <button id="btn-inicio">Iniciar Registro de Alumnos</button>
+        </section>
+        <section id="alta-alumnos" class="hidden">
+            <h2>Alta de Alumnos</h2>
+            <form id="form-alta">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="apellidoPaterno">Apellido Paterno:</label>
+                <input type="text" id="apellidoPaterno" required>
+                <label for="apellidoMaterno">Apellido Materno:</label>
+                <input type="text" id="apellidoMaterno" required>
+                <label for="edad">Edad:</label>
+                <input type="nxo" required>
+                <button type="submit">Dar de Alta</button>
+            </form>
+        </section>
+        <section id="funciones" class="hidden">
+            <h2>Alta de Materias</h2>
+            <form id="form-inscribir-materia">
+                <label for="nombre-inscribir">Nombre del Alumno:</label>
+                <input type="text" id="nombre-inscribir" required>
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" required>
+                <button type="submit">Inscribir Materia</button>
+            </form>
+            <form id="form-asignar-calificacion">umber" id="edad" min="1" max="99" required>
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="se
+                <label for="nombre-calificacion">Nombre del Alumno:</label>
+                <input type="text" id="nombre-calificacion" required>
+                <label for="materia-calificacion">Materia:</label>
+                <input type="text" id="materia-calificacion" required>
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion" min="0" max="100" required>
+                <button type="submit">Asignar Calificación</button>
+            </form>
+            <form id="form-buscar-alumno">
+                <label for="buscar-nombre">Buscar por Nombre:</label>
+                <input type="text" id="buscar-nombre">
+                <label for="buscar-apellido">Buscar por Apellido:</label>
+                <input type="text" id="buscar-apellido">
+                <button type="submit">Buscar</button>
+            </form>
+            <button id="btn-promedio-alumno">Obtener Promedio del Alumno</button>
+            <button id="btn-promedio-grupo">Obtener Promedio del Grupo</button>
+            <button id="btn-ordenar-asc">Ordenar Ascendente por Calificación</button>
+            <button id="btn-ordenar-desc">Ordenar Descendente por Calificación</button>
+        </section>
+    </main>
+    <script src="bdatos.js"></script>
+</body>
+</html>
+
+
